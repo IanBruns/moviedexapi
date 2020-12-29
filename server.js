@@ -5,8 +5,8 @@ const app = express()
 
 app.use(morgan('dev'))
 
-app.use((req, res) => {
-    res.send('Hello, world!')
+app.get('/movie', (req, res) => {
+    res.send('pee is stored in the balls')
 })
 
 const PORT = 8000
